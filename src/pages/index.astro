@@ -9,6 +9,52 @@ const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 const allPostsByPinned = sortMDByPinned(allPostsByDate);
 
+const services: Array<{ title: string; desc: string; href: string }> = [
+	{
+		title: "Full Stack Web Development",
+		desc: "Design and create software and web applications that utilize modern backend and front-end technologies.",
+		href: "/services",
+	},
+	{
+		title: "Content Creation Services",
+		desc: "Create content that uses storytelling principles to engage users and bring awareness to your brand.",
+		href: "/services",
+	},
+	{
+		title: "Brand/Marketing Consulting",
+		desc: "Provide consultation services for SEO, email, social media, and content marketing campaigns and make sure they align with objectives and goals of your brand.",
+		href: "/services",
+	},
+	{
+		title: "General Business Consulting",
+		desc: "Utilize experience in finance, supply chain management, ecommerce, and entrepreneurship to help small businesses make strategic decisions.",
+		href: "/services",
+	},
+];
+
+const projects: Array<{ title: string; desc: string; href: string }> = [
+	{
+		title: "Project 1",
+		desc: "The first project.",
+		href: "/projects/project-1",
+	},
+	{
+		title: "Project 2",
+		desc: "The second project.",
+		href: "/projects/project-2",
+	},
+	{
+		title: "Project 3",
+		desc: "The third project.",
+		href: "/projects/project-3",
+	},
+	{
+		title: "Project 4",
+		desc: "The fourth project.",
+		href: "/projects/project-4",
+	},
+]
+
 const tech: Array<{ title: string; desc: string; href: string }> = [
 	{
 		title: "Astro",
@@ -16,9 +62,9 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 		href: "https://astro.build",
 	},
 	{
-		title: "Astro Assets",
-		desc: "Built-in optimized asset support.",
-		href: "https://docs.astro.build/en/guides/assets/",
+		title: "JavaScript",
+		desc: "A lightweight, interpreted program that powers 99% of the web by adding client-side interactivity to web sites.",
+		href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
 	},
 	{
 		title: "Tailwind CSS",
@@ -26,9 +72,9 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 		href: "https://tailwindcss.com",
 	},
 	{
-		title: "Markdown",
-		desc: "Simple and easy-to-use markup language.",
-		href: "https://www.markdownguide.org/",
+		title: "StackBlitz",
+		desc: "An online development environment for frontend, Node.js and the JavaScript ecosystem.",
+		href: "https://stackblitz.com",
 	},
 	{
 		title: "MDX",
@@ -36,26 +82,68 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 		href: "https://mdxjs.com/",
 	},
 	{
-		title: "Astro Icon",
-		desc: "An easy to use Icon component for Astro.",
+		title: "GitHub",
+		desc: "The open source platform where developers create, store, manage, and share their code.",
 		href: "https://github.com/natemoo-re/astro-icon#readme",
 	},
 ];
+
+
 
 ---
 
 <BaseLayout title="Home">
 	<section>
-		<h1 class="title">Hello World</h1>
+		<h1 class="title">Andrew Weisbeck - Freelance Full Stack Web Developer</h1>
 		<p class="mb-4 sm:mb-8">
-			Hey guys! This a theme for Astro. You can use this to as personal blog
-			or portfolio. If you want to know more about how you can customise and make it your
-			own, click on the github icon link below, and it will take you to the repo.
+			Hey y'all! My name is Andrew and I'm a 32 year old full-stack web developer who lives in the Raleigh-Durham-Chapel Hill area of North Carolina with my fiancé Lisa. I am currently seeking new career opportunities, hopefully in software development.
 		</p>
 		<div>
 			<span>You can find me on: </span>
 			<SocialMediaLinks/>
 		</div>
+	</section>
+
+	<section class="mt-16">
+		<h2 class="title">Services</h2>
+		<ul class="space-y-4 sm:space-y-2">
+			{
+				services.map(({ href, title, desc }) => (
+					<li>
+						<a
+							href={href}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="cody-link inline-block"
+						>
+							{title}
+						</a>:
+						<p class="inline-block sm:mt-2">{desc}</p>
+					</li>
+				))
+			}
+		</ul>
+	</section>
+
+	<section class="mt-16">
+		<h2 class="title">Projects</h2>
+		<ul class="space-y-4 sm:space-y-2">
+			{
+				projects.map(({ href, title, desc }) => (
+					<li>
+						<a
+							href={href}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="cody-link inline-block"
+						>
+							{title}
+						</a>
+						<p class="inline-block sm:mt-2">{desc}</p>
+					</li>
+				))
+			}
+		</ul>
 	</section>
 
 	<section class="mt-8 sm:mt-16">

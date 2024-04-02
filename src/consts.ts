@@ -18,12 +18,12 @@ type SocialLink = {
 }
 
 export const siteConfig: Config = {
-  title: "Astro Theme Cody",
-  description: "",
-  lang: "en-GB",
+  title: "Andrew Weisbeck Portfolio Website",
+  description: "The official portfolio website for Andrew Weisbeck.",
+  lang: "en-US",
   profile: {
-    author: "Amy Dang",
-    description: "your bio description"
+    author: "Andrew Weisbeck",
+    description: "Full Stack Web Developer and Entrepreneur located in Durham, North Carolina."
   }
 }
 
@@ -35,17 +35,17 @@ export const socialLinks: Array<SocialLink> = [
   {
     icon: "mdi:github",
     friendlyName: "Github",
-    link: "https://github.com/kirontoo/astro-theme-cody",
+    link: "https://github.com/geauxweisbeck4/andrewweisbeck-portfolio",
   },
   {
     icon: "mdi:linkedin",
     friendlyName: "LinkedIn",
-    link: "#",
+    link: "https://linkedin.com/in/geauxweisbeck4",
   },
   {
     icon: "mdi:email",
     friendlyName: "email",
-    link: "mailto:ndangamy@gmail.com",
+    link: "mailto:andrewweisbeck4@gmail.com",
   },
 
 ];
@@ -65,6 +65,14 @@ export const NAV_LINKS: Array<{ title: string, path: string }> = [
   },
   {
     title: "Projects",
-    path: '/projects'
-  }
+    path: '/projects',
+  },
+  {
+    title: "Services",
+    path: '/services',
+  },
+  {
+    title: "Contact",
+    path: '/contact',
+  },
 ];
