@@ -1,5 +1,5 @@
 ---
-title: 'Project 1'
+title: 'Array String Music Player'
 description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci'
 pubDate: 'Apr 03 2023'
 heroImage:

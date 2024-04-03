@@ -9,6 +9,57 @@ const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 const allPostsByPinned = sortMDByPinned(allPostsByDate);
 
+const skills: Array<{ title: string; knowledge: number }> = [
+	{
+		title: "JavaScript",
+		knowledge: 90,
+	},
+	{
+		title: "CSS",
+		knowledge: 95,
+	},
+	{
+		title: "HTML",
+		knowledge: 100,
+	},
+	{
+		title: "Python",
+		knowledge: 95,
+	},
+	{
+		title: "Relational Databases",
+		knowledge: 80,
+	},
+	{
+		title: "MongoDB",
+		knowledge: 85,
+	},
+	{
+		title: "Communication",
+		knowledge: 100,
+	},
+	{
+		title: "Customer Service",
+		knowledge: 100,
+	},
+	{
+		title: "Marketing and Content Creation",
+		knowledge: 100,
+	},
+	{
+		title: "React",
+		knowledge: 95,
+	},
+	{
+		title: "Go Lang",
+		knowledge: 70,
+	},
+	{
+		title: "Algorithms and Data Structures",
+		knowledge: 85,
+	},
+];
+
 const services: Array<{ title: string; desc: string; href: string }> = [
 	{
 		title: "Full Stack Web Development",
@@ -55,36 +106,42 @@ const projects: Array<{ title: string; desc: string; href: string }> = [
 	},
 ]
 
-const tech: Array<{ title: string; desc: string; href: string }> = [
+const experience: Array<{ title: string; company: string; date: string; desc: string }> = [
 	{
-		title: "Astro",
-		desc: "Build fast websites, faster.",
-		href: "https://astro.build",
+		title: "Freelance Full Stack Developer",
+		company: "Tar Heel Dev Studio",
+		date: "November 2021 - Present",
+		desc: "Design and create web applications for clients and offer other services like content creation, brand/marketing consulting, and social media management.",
 	},
 	{
-		title: "JavaScript",
-		desc: "A lightweight, interpreted program that powers 99% of the web by adding client-side interactivity to web sites.",
-		href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+		title: "SOC Analyst",
+		company: "Iron Range Cyber (formerly CyberOpz)",
+		date: "June 2021 - November 2021",
+		desc: "Monitored endpoints, performed security triage, and coordinated responses to critical security incidents with teammates. Created and communicated monthly security reports to clients while servicing all their cyber security needs.",
 	},
 	{
-		title: "Tailwind CSS",
-		desc: "Rapidly build modern websites without ever leaving your HTML.",
-		href: "https://tailwindcss.com",
+		title: "Personal Banker IV",
+		company: "Truist Bank (formerly SunTrust)",
+		date: "April 2019 - August 2020",
+		desc: "Provided financial confidence to bank clients by offering bank products and services including deposit and savings accounts, credit cards, Home Equity Lines of Credit, Small Business Loans, and other business banking products.",
 	},
 	{
-		title: "StackBlitz",
-		desc: "An online development environment for frontend, Node.js and the JavaScript ecosystem.",
-		href: "https://stackblitz.com",
+		title: "Purchasing and Inventory Manager",
+		company: "Birddog Distributing Inc.",
+		date: "October 2017 - April 2019",
+		desc: "Managed supply chain logistics, created and submitted purchase orders to manufacturers, coordinated quality control standards on products, and maintained entire warehouse inventory of LED lights, bicycle engines, and metal garden markers for an ecommerce company.",
 	},
 	{
-		title: "MDX",
-		desc: "Markdown for the component era.",
-		href: "https://mdxjs.com/",
+		title: "Financial Representative",
+		company: "TD Ameritrade Inc",
+		date: "September 2014 - June 2016",
+		desc: "Placed stock, mutual fund, and option trades for clients as a broker of TD Ameritrade Inc. Cross sold other products that help clients place trades more effectively and accurately.",
 	},
 	{
-		title: "GitHub",
-		desc: "The open source platform where developers create, store, manage, and share their code.",
-		href: "https://github.com/natemoo-re/astro-icon#readme",
+		title: "College Savings Representative",
+		company: "Union Bank and Trust",
+		date: "November 2011 - September 2014",
+		desc: "Serviced 529 college saving plans for the Alabama College Counts 529 plan and the Illinois Bright Directions 529 plan.",
 	},
 ];
 
@@ -93,7 +150,7 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 ---
 
 <BaseLayout title="Home">
-	<section>
+	<section class="px-10">
 		<h1 class="title">Andrew Weisbeck - Freelance Full Stack Web Developer</h1>
 		<p class="mb-4 sm:mb-8">
 			Hey y'all! My name is Andrew and I'm a 32 year old full-stack web developer who lives in the Raleigh-Durham-Chapel Hill area of North Carolina with my fiancé Lisa. I am currently seeking new career opportunities, hopefully in software development.
@@ -104,7 +161,21 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 		</div>
 	</section>
 
-	<section class="mt-16">
+	<section class="mt-16 px-10">
+		<h2 class="title">Experience</h2>
+		<ul class="space-y-4 sm:space-y-2">
+			{experience.map(({ title, company, date, desc }) => (
+				<li>
+					<h3 class="text-md font-bold inline-block">{title} | </h3>
+					<h3 class="text-md text-cyan-300 font-bold inline-block">{company} |</h3>
+					<p class="text-md font-semibold text-emerald-300 inline-block">{date}</p>
+					<p class="mt-2">{desc}</p>
+				</li>
+			))}
+		</ul>
+	</section>
+
+	<section class="mt-16 px-10">
 		<h2 class="title">Services</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			{
@@ -125,7 +196,8 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 		</ul>
 	</section>
 
-	<section class="mt-16">
+	<section class="mt-16 px-10">
+		<div class="inline-block">
 		<h2 class="title">Projects</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			{
@@ -144,33 +216,14 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 				))
 			}
 		</ul>
-	</section>
-
-	<section class="mt-8 sm:mt-16">
-		<h2 class="title">Posts</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			{allPostsByPinned.map(p => <PostPreview post={p}/>)}
-		</ul>
-	</section>
-
-	<section class="mt-16">
-			<h2 class="title">Technologies</h2>
+		</div>
+		<div class="inline-block pl-40">
+			<h2 class="title">Posts</h2>
 			<ul class="space-y-4 sm:space-y-2">
-				{
-					tech.map(({ href, title, desc }) => (
-						<li>
-							<a
-								href={href}
-								target="_blank"
-								rel="noopener noreferrer"
-								class="cody-link inline-block"
-							>
-								{title}
-							</a>: 
-							<p class="inline-block sm:mt-2">{desc}</p>
-						</li>
-					))
-				}
+				{allPostsByPinned.map(p => <PostPreview post={p}/>)}
 			</ul>
-		</section>
+		</div>
+	</section>
+
+
 </BaseLayout>

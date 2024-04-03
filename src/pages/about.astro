@@ -1,55 +1,80 @@
 ---
 import Layout from '../layouts/Base.astro';
+
+const tech: Array<{ title: string; desc: string; href: string }> = [
+	{
+		title: "Astro",
+		desc: "Build fast websites, faster.",
+		href: "https://astro.build",
+	},
+	{
+		title: "JavaScript",
+		desc: "A lightweight, interpreted program that powers 99% of the web by adding client-side interactivity to web sites.",
+		href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+	},
+	{
+		title: "Tailwind CSS",
+		desc: "Rapidly build modern websites without ever leaving your HTML.",
+		href: "https://tailwindcss.com",
+	},
+	{
+		title: "StackBlitz",
+		desc: "An online development environment for frontend, Node.js and the JavaScript ecosystem.",
+		href: "https://stackblitz.com",
+	},
+	{
+		title: "MDX",
+		desc: "Markdown for the component era.",
+		href: "https://mdxjs.com/",
+	},
+	{
+		title: "GitHub",
+		desc: "The open source platform where developers create, store, manage, and share their code.",
+		href: "https://github.com/natemoo-re/astro-icon#readme",
+	},
+];
+
 ---
 
 <Layout
 	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	image="/blog-placeholder-about.jpg"
+	description="Learn more about my life, work history, skills, and interests."
+	image="/andrewhero.png"
 >
-	<h1 class="title">About</h1>
+	<h1 class="title">About Me</h1>
 	<p>
-		Hi, I'm a Astro theme. I'm particularly great for starting a blog or a 
-		portfolio. 
-		<div>
-			I was based on two other themes:
-			<a 
-				class="cody-link" 
-				href="https://astro-theme-cactus.netlify.app"
-				target="_blank"
-				rel="noopener noreferrer"
-			>Astro Cactus</a>
-			and
-			<a 
-				class="cody-link" 
-				target="_blank"
-				rel="noopener noreferrer"
-				href="https://risotto.joeroe.io"
-			>Risotto</a>.
-		</div>
+		You will find just about everything that you need to know about my work experience, skills, education, and interests on this page. If there is anything else you want to know, <a href="/contact">just ask me</a>!
+
 	</p>
 
-	<h2 class="title mt-4">Here are my built-in features:</h2>
+	<h2 class="title mt-4">Here are some random things about me:</h2>
 	<ul class="list-inside list-disc">
-		<li>Looks great on any device</li>
-		<li>Fully Responsive</li>
-		<li>Comes light and dark mode</li>
-		<li>Easy to customize and add content</li>
-		<li>Built with tailwindcss</li>
-		<li>Pin posts and projects</li>
+		<li>Born in Rapid City, South Dakota</li>
+		<li>Attended the University of Nebraska-Lincoln and graduated in 2014</li>
+		<li>My high school won the state championship in football three years in a row, including my Senior year when I was a starter in 2008</li>
+		<li>I have a very diverse ancestry that includes Native American, French, German, Irish, English, Norwegian, Italian, and even some Egyptian</li>
+		<li>Currently homeless with my fiancé - we live in a tent and are doing everything we can to get out of it</li>
+		<li>States I've lived in: South Dakota, Virginia, Montana, Nebraska, and North Carolina</li>
 	</ul>
-	<p class="mt-4">
-		Clone or fork my 
-		<a
-			class="cody-link inline-block"
-			href="https://github.com/kirontoo/astro-theme-cody"
-			target="_blank"
-			rel="noopener noreferrer"
-			aria-label="github repository"
-		>
-			repo
-		</a>
-		if you like me!
-	</p>
+	<section class="mt-16">
+		<h2 class="title">Technologies</h2>
+		<ul class="space-y-4 sm:space-y-2">
+			{
+				tech.map(({ href, title, desc }) => (
+					<li>
+						<a
+							href={href}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="cody-link inline-block"
+						>
+							{title}
+						</a>:
+						<p class="inline-block sm:mt-2">{desc}</p>
+					</li>
+				))
+			}
+		</ul>
+	</section>
 </Layout>
 
