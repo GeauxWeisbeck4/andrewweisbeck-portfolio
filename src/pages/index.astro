@@ -85,9 +85,9 @@ const services: Array<{ title: string; desc: string; href: string }> = [
 
 const projects: Array<{ title: string; desc: string; href: string }> = [
 	{
-		title: "Project 1",
-		desc: "The first project.",
-		href: "/projects/project-1",
+		title: "Array String Music Player",
+		desc: "An MP3 music player created with JavaScript, HTML, and CSS",
+		href: "/projects/array-string-music-player",
 	},
 	{
 		title: "Project 2",
@@ -104,7 +104,7 @@ const projects: Array<{ title: string; desc: string; href: string }> = [
 		desc: "The fourth project.",
 		href: "/projects/project-4",
 	},
-]
+];
 
 const experience: Array<{ title: string; company: string; date: string; desc: string }> = [
 	{
@@ -150,7 +150,7 @@ const experience: Array<{ title: string; company: string; date: string; desc: st
 ---
 
 <BaseLayout title="Home">
-	<section class="px-10">
+	<section>
 		<h1 class="title">Andrew Weisbeck - Freelance Full Stack Web Developer</h1>
 		<p class="mb-4 sm:mb-8">
 			Hey y'all! My name is Andrew and I'm a 32 year old full-stack web developer who lives in the Raleigh-Durham-Chapel Hill area of North Carolina with my fiancé Lisa. I am currently seeking new career opportunities, hopefully in software development.
@@ -161,7 +161,7 @@ const experience: Array<{ title: string; company: string; date: string; desc: st
 		</div>
 	</section>
 
-	<section class="mt-16 px-10">
+	<section class="mt-16">
 		<h2 class="title">Experience</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			{experience.map(({ title, company, date, desc }) => (
@@ -175,7 +175,7 @@ const experience: Array<{ title: string; company: string; date: string; desc: st
 		</ul>
 	</section>
 
-	<section class="mt-16 px-10">
+	<section class="mt-16">
 		<h2 class="title">Services</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			{
@@ -196,7 +196,7 @@ const experience: Array<{ title: string; company: string; date: string; desc: st
 		</ul>
 	</section>
 
-	<section class="mt-16 px-10">
+	<section class="mt-16">
 		<div class="inline-block">
 		<h2 class="title">Projects</h2>
 		<ul class="space-y-4 sm:space-y-2">
@@ -211,13 +211,16 @@ const experience: Array<{ title: string; company: string; date: string; desc: st
 						>
 							{title}
 						</a>
-						<p class="inline-block sm:mt-2">{desc}</p>
+						<p class="inline-block sm:mt-2">| {desc}</p>
 					</li>
 				))
 			}
 		</ul>
 		</div>
-		<div class="inline-block pl-40">
+	</section>
+
+		<section class="mt-16">
+		<div class="inline-block">
 			<h2 class="title">Posts</h2>
 			<ul class="space-y-4 sm:space-y-2">
 				{allPostsByPinned.map(p => <PostPreview post={p}/>)}
