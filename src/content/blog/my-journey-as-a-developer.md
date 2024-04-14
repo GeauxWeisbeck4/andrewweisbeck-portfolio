@@ -1,0 +1,82 @@
+---
+title: 'My Journey as a Developer'
+description: 'It has been a long and difficult journey that has taught me many valuable lessons.'
+pubDate: 'Apr 13 2024'
+heroImage:
+  src: '/webdevjourney.jpg'
+  alt: ''
+order: 1
+tags: ["dev journey", "personal", "javascript", "learning"]
+---
+
+Unconventional is the perfect word that I would choose to describe my journey as a web developer. It has been an up and down ride that at times feels like I will never achieve any of my major goals, like getting a developer job where I can work with more experienced developers to help me grow and learn. Despite all the heartbreak, struggles, and hours of frustration that I've carried myself through, I really have had so much fun learning and creating things I never thought I could do.
+
+If you are interested in learning more about who I am as a web developer and a person, I think it is important for you to understand what my road to this point has involved. Read on to learn more about how Andrew Weisbeck has been looking for a full stack web developer job for three years and why he is ready for a position now, more than ever.
+
+## My Love For Computers Began Over 20 Years Ago
+
+I remember when my parents set up our very first computer - a Compaq Presario that was a giant box shaped thing that ran on dial up. One of the first websites I ever remember going to was CartoonNetwork.com and playing their little JavaScript browser games. I remember listening to all sorts of music from all over the world on Encarta Encyclopedia and crashing out the computer when I tried to play Madden 99. Some of the most exciting times I had were playing NCAA Football 98 and taking Nebraska to the national championship with little 3D Scott Frost at the helm. I remember this little game where you would make music by laying out different colored squares and playing the character instruments over them and I can't forget Motocross, uh - I don't remember the name but it was a sick motorcycle game.
+
+There was something so captivating about that machine. It was slow, you couldn't talk on the phone when you browsed the web, and AOL messaging was king, but it changed my life. I was really interested in technology, even as a youngster. I would read the documentation for all the various Microsoft applications and at that time I didn't realize it, but I was somewhat reading code and learning how they worked.
+
+![Old Computer Technology](/public/oldinternet.png)
+
+Eventually my family caught up to the times and we got a laptop and broadband internet. I used to love hanging out on college football forums and would play NCAA Football on the Playstation 2, the first gaming system to offer online gaming and I was a part of the first generation that was able to play online multiplayer video games. There was a lot of troubleshooting during these times and this was when I was first really introduced to Networking and I remember learning about the Client-Server model around this time.
+
+I remember around this time of heavy video gaming, I had purchased a gaming magazine and read about a school where you learned to create video games - I thought it was the coolest sounding college ever, but thought that would be impossible for a Montana boy like me to ever break into. I would often dream of sitting in a college class and creating the next version of NCAA Football while sucking down Mountain Dew (the school claimed that they had unlimited Mountain Dew on reserve and I thought that was so cool). Really no other job sounded as cool as sitting at a computer and creating things all day long, but I really couldn't imagine how I would ever get into anything like that.
+
+Looking back at my love for computers and my fascination with coding, I often wonder why in the hell I ended up with a Business Administration degree from the University of Nebraska in Lincoln. I was a wrong turn in the engineering building from becoming a computer science major my Freshman year in Bozeman (I went to Montana State my freshman year) as I enrolled as an electrical engineering major. EE was fascinating to me, but I was struggling with my ADHD heavily at this time and wasn't prepared for all the heavy math and science that was thrown at me. I would switch from electrical engineering to civil engineering to construction management, and eventually I ended up in the business college after pissing away two and a half years in school barely passing the engineering course load.
+
+What I would give to go back in time and enroll in school as a computer science major. Part of the problem for me in engineering was that I had no idea what I would do with the degree and was not prepared for the course work at all from my high school. Another part of the problem was poor academic counseling and me just not knowing what I wanted to do for the rest of my life. College was more of a time of experiencing a new world for me, going to school in a town of 300,000 when I had grown up in a town of 30,000.
+
+If somebody would have realized my passion for computers back then, I could have been saved and I wouldn't be here right now figuring out how my career got to this point in time.
+
+![Different Majors](/public/differentmajors.jpg)
+
+## My First Coding Lessons
+
+After I graduated college in 2014, I realized that nobody wanted to hire a Business Administration major who didn't get their MBA. I knew some fraternity brothers in college though who had made money off apps they made and others who took killer tech jobs with six figure salaries out of college. That was when I decided I needed to learn how to code and took my first FreeCodeCamp.org course. I had already fooled around with HTML as a kid and a tiny bit of JavaScript here and there, but CodeAcademy was the first time I could recall writing an entire script.
+
+Again, due to a lack of research and guidance, my time coding sort of fizzled out and I would pick it up, drop it, and pick it up again over time. CodeAcademy didn't really teach you how to set up your own IDE at the time and didn't really tell you to download Node.js or anything at the time. Everything was in the browser, so I really didn't know where to go from there and I felt like I wasn't really learning a whole lot by just writing code in a virtual sandbox.
+
+I tried breaking into data analytics and SQL database admin jobs, but they all wanted some type of degree or training in Python, R, and SQL. So I went and bought a little Python book and an SQL book and started learning those in 2017. Things were starting to click for me and then a bunch of things happened in my life and I ended up going from Bozeman, MT with a girlfriend to all alone in Clayton, North Carolina at the end of 2019. You know what was right around the corner? Covid and it would absolutely wreck the world as I knew it.
+
+## My First Tech Job and Teaching Myself Coding
+
+My banking job I had when Covid hit didn't work out because they were shutting down our branch and I didn't want to have to commute an hour and half to a new location, so I took a roofing sales job that I hated and didn't last long at. During this time I had been doing a bunch of SEO writing, marketing projects, content creation, and gig jobs online that really introduced me to the world of self employment. I even created content for a marketing firm for a year and half in North Carolina and sort of created my own little consulting business. I realized that I would really need to develop an awesome tech skill if I were to get ahead in this world, just like everyone else did during Covid.
+
+Some good things happened during these last few years, but even more bad things happened. The good outweighs the bad however as I met the love of my life, my fiancé Lisa and she moved in with me at the end of 2020. I had some side gigs and worked on the PPP loan processing for a little while before I got my very first tech job as a SOC Analyst for a company called CyberOpz (they are now known as Iron Range Cyber).
+
+I felt like I had made it when I got this job - it was remote, paid well, and I got to learn all about cyber security, networking, and I had time to even learn coding! I really excelled in this job and was really bummed when I was let go after six months of working there. I don't want to go into all the details, but I felt there was a misunderstanding on something as I was dealing with some mental health things that caused me to have to miss work to seek treatment for a week. They felt like it left the company vulnerable (even though I had told them what was going on) and when I had that issue come up again later on and needed a few mental health days to adjust to some medication. I really didn't see it coming when I got terminated and it absolutely crushed me because it didn't seem fair - plus it was a couple days before Thanksgiving and during a time where I was just building back stability financially with Lisa.
+
+Losing the job did one good thing, but lots of other bad things. I feel like I really couldn't recover from the job loss and have had a really hard time finding work over the last three years - hell, I interviewed at Walmart this week and was turned down for a stocking position. But losing the job killed us financially, which happened at a time our rent assistance we were receiving abruptly stopped out of the blue and we went from having our rent covered, to having to pay four months rent within a month or we would lose our apartment.
+
+## Learning, Trying, Failing, Getting Back Up, Repeating...
+
+We moved into a more expensive apartment as we had to get into a place on a short timeline as we could not continue to extend our lease due to owing back pay on a few months rent. Lisa was working as a social worker and I was learning full stack web development full time and trying to find work - both freelance and at software companies. I would say between November 2021 when I lost my job and today, I have applied for over a thousand jobs easily. I spent 2022-2023 applying for five jobs a day while also learning coding, all day and every day. I had probably 20-something interviews with tech companies, but only had three job offers.
+
+One was from Revature - they pay you $7 an hour to go through a web development bootcamp and then you get shipped off to a city where you have to live and work for someone they are contracted through, at way less than the median salary of other developers for at least two years. One other job I got was going to be really cool, but it really just didn't work out because I didn't have the transportation to get from Raleigh to the middle of nowhere Durham, so I missed out on a really cool Full Stack Developer job and was super bummed about that. The third job I got was sort of a freelance job that I got screwed over really badly. I spent three weeks reviewing the software for a Web 3 company owner and rewriting all the code for his app, just to have him decide not to pay me despite the contracts we had in place - the problem: I was homeless by then and didn't have the resources to get that money that I was owed.
+
+That brings me to today. I am sitting in Panera writing this blog post and anxiously waiting to deploy my portfolio site and put in my resume at a bunch of tech companies. To be honest, this has been the worst last 16 months of my life since we were forced out of our apartment at the beginning of 2023 and I have not been able to figure out how to get out of this situation. Lisa and I have been living in a tent, barely able to feed ourselves at times and struggling to find any kind of work - like I said, Walmart just turned me down like so many other companies.
+
+![World on my shoulders](/public/worldonshoulders.jpg)
+
+## Why I'm Ready to Work as a Developer... NOW!
+
+You may be thinking to yourself - why would I hire a homeless guy to come work as a developer for me? There must be something wrong with him. I promise you I am not like any other homeless person that you are thinking of, first of all. I have spent the last month coding for 8-10 hours a day when I am not helping out with holding a sign to get a little money for propane and food. While I haven't been able to code at times for various reasons like my Mac being in the pawnshop for a few months and having my nice Yogabook laptop stolen from me, I have taken a new approach to programming that has allowed me to grow past where I was stuck back in 2022.
+
+In 2022, I was in tutorial hell and interview hell - I kept not getting jobs which caused an immense amount of stress in our life as we were facing impending eviction from our apartment. It was really hard to focus on things like Data Structures and Algorithms and I spent a lot of time focusing on the wrong stuff. I was doing way too many tutorials, not enough algorithm practicing, and not nearly enough of trying to build my own things I designed and developed. Don't get me wrong, I did create my own applications and did learn computer science during this time - I just didn't have the focus or any idea of how to approach learning about computer science in a structured way that would help me crush coding interviews.
+
+I've been using LeetCodes, Codewars, FreeCodeCamp.org, GitHub learning resources, and everything I can get my hands on. I'm spending a lot of time learning data structures and algorithms, building projects that are mine, and making myself as valuable as I possibly can to a future employer. I am about to start focusing more of my effort trying to pick up some freelance work while I apply to companies, but I am fully confident that I can step into any type of beginner or even an intermediate full stack JavaScript developer role and be able to produce from day one.
+
+I have worked on hundreds, if not thousands, of different projects over the years. I have tried almost every language and lately have been spending a lot more time with Go Lang and Rust. I'm still in love with Python, but JavaScript is my baby. *I think if you can get past the fact that I am homeless, you will find a very qualified candidate who is so passionate about coding, learning, and will outwork anybody that you put me up against.* **Everything has been so hard in my daily life for 16 months, that I am convinced that I can do anything, especially a job where I would be doing something that I love more than anything - programming**.
+
+![I love programming](/public/webdevtech.jpg)
+
+Please don't look into the idea that I would be unstable because I am un-housed - for one thing, getting a job would allow me to get a voucher for housing in North Carolina and I could get off the streets and into a place really quickly. But I urge you to look past what society would see as a flawed person because I have gone through more hardships in the last couple years than most people ever experience in their life. See me for who I am - a hard-working, creative and passionate programmer, who loves solving programs with technology, and is obsessed with computer science.
+
+I am very intelligent and have a lot of experience in many different fields of business and life that I could apply to a successful career in software development. I'm a great teammate who values transparency, open communication, and a hard work ethic. I will elevate and help my teammates where I can with the skills I have and will constantly grow my own programming and problem-solving skills by learning from senior developers through code reviews and feedback. Last but not least, I am as competitive as a person that you will ever meet and will make sure that I do anything to make an organization succeed.
+
+Thank you for taking the time to read about my web dev journey - I know this has been a long post, but I feel it was necessary to explain my story, so you can have a better idea of who I am, beyond my resume and portfolio. Every person's story can be their best asset, no matter how low you may end up in life and I feel that my story includes so many difficult obstacles that I have had to overcome to shape me into who I am today. I truly believe the next chapter of my story includes a very successful future for me and the organization who decides to give me a chance to prove myself.
+
+![Web Dev Journey](/public/webdevjourney.jpg)
