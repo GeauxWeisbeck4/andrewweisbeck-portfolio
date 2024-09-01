@@ -1,7 +1,7 @@
 {
-  "name": "astro-theme-cody",
+  "name": "geauxweisbeck4.dev",
   "type": "module",
-  "version": "0.0.1",
+  "version": "3.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -23,6 +23,8 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@iconify-json/fa6-brands": "^1.1.22",
     "@tailwindcss/typography": "^0.5.10"
-  }
+  },
+  "packageManager": "pnpm@9.7.0+sha512.dc09430156b427f5ecfc79888899e1c39d2d690f004be70e05230b72cb173d96839587545d09429b55ac3c429c801b4dc3c0e002f653830a420fa2dd4e3cf9cf"
 }

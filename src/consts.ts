@@ -18,8 +18,8 @@ type SocialLink = {
 }
 
 export const siteConfig: Config = {
-  title: "Andrew Weisbeck Portfolio Website",
-  description: "The official portfolio website for Andrew Weisbeck.",
+  title: "Andrew Weisbeck | Full Stack Developer",
+  description: "Andrew Weisbeck's Personal Portfolio and Developer Journal.",
   lang: "en-US",
   profile: {
     author: "Andrew Weisbeck",
