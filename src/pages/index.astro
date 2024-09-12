@@ -153,10 +153,10 @@ const experience: Array<{ title: string; company: string; date: string; desc: st
 	<section>
 		<h1 class="title">Andrew Weisbeck - Freelance Full Stack Web Developer</h1>
 		<p class="mb-4 sm:mb-8">
-			Hey y'all! My name is Andrew and I'm a 32 year old full-stack web developer who lives in the Raleigh-Durham-Chapel Hill area of North Carolina with my fiancé Lisa. I am currently seeking new career opportunities, hopefully in software development.
+			I am a full stack developer and content creator with a passion for creating beautiful, interactive websites and apps. At this time in my career, I am open to new employment opportunities and actively applying to full-stack developer roles for individuals with a solid grasp of JavaScript/TypeScript and/or Python. If you are looking to hire me for my services, please visit my website for [Tar Heel Dev Studio](https://tarheeldevstudio.deno.dev) where you can schedule a free consultation.
 		</p>
 		<div>
-			<span>You can find me on: </span>
+			<span>You can also find me on: </span>
 			<SocialMediaLinks/>
 		</div>
 	</section>
@@ -175,26 +175,6 @@ const experience: Array<{ title: string; company: string; date: string; desc: st
 		</ul>
 	</section>
 
-	<section class="mt-16">
-		<h2 class="title">Services</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			{
-				services.map(({ href, title, desc }) => (
-					<li>
-						<a
-							href={href}
-							target="_blank"
-							rel="noopener noreferrer"
-							class="cody-link inline-block"
-						>
-							{title}
-						</a>:
-						<p class="inline-block sm:mt-2">{desc}</p>
-					</li>
-				))
-			}
-		</ul>
-	</section>
 
 	<section class="mt-16">
 		<div class="inline-block">
