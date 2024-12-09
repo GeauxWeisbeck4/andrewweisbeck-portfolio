@@ -10,13 +10,13 @@ importers:
     dependencies:
       '@astrojs/check':
         specifier: ^0.3.2
-        version: 0.3.2(typescript@5.3.3)
+        version: 0.3.2(typescript@5.6.3)
       '@astrojs/db':
         specifier: ^0.14.0
         version: 0.14.3
       '@astrojs/mdx':
         specifier: ^2.0.1
-        version: 2.0.1(astro@4.0.5(typescript@5.3.3))
+        version: 2.0.1(astro@4.0.5(typescript@5.6.3))
       '@astrojs/rss':
         specifier: ^4.0.1
         version: 4.0.1
@@ -25,10 +25,10 @@ importers:
         version: 3.0.3
       '@astrojs/tailwind':
         specifier: ^5.0.3
-        version: 5.0.3(astro@4.0.5(typescript@5.3.3))(tailwindcss@3.3.6)
+        version: 5.0.3(astro@4.0.5(typescript@5.6.3))(tailwindcss@3.3.6)
       astro:
         specifier: ^4.0.4
-        version: 4.0.5(typescript@5.3.3)
+        version: 4.0.5(typescript@5.6.3)
       astro-icon:
         specifier: ^0.8.2
         version: 0.8.2
@@ -43,7 +43,7 @@ importers:
         version: 3.3.6
       typescript:
         specifier: ^5.3.3
-        version: 5.3.3
+        version: 5.6.3
     devDependencies:
       '@iconify-json/fa6-brands':
         specifier: ^1.1.22
@@ -1413,6 +1413,7 @@ packages:
 
   glob@7.1.6:
     resolution: {integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
@@ -1488,6 +1489,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -2319,6 +2321,7 @@ packages:
 
   shikiji@0.6.13:
     resolution: {integrity: sha512-4T7X39csvhT0p7GDnq9vysWddf2b6BeioiN3Ymhnt3xcy9tXmDcnsEFVxX18Z4YcQgEE/w48dLJ4pPPUcG9KkA==}
+    deprecated: Shikiji is merged back to Shiki v1.0, please migrate over to get the latest updates
 
   signal-exit@3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
@@ -2526,8 +2529,8 @@ packages:
   typescript-auto-import-cache@0.3.0:
     resolution: {integrity: sha512-Rq6/q4O9iyqUdjvOoyas7x/Qf9nWUMeqpP3YeTaLA+uECgfy5wOhfOS+SW/+fZ/uI/ZcKaf+2/ZhFzXh8xfofQ==}
 
-  typescript@5.3.3:
-    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+  typescript@5.6.3:
+    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -2822,13 +2825,13 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.20
 
-  '@astrojs/check@0.3.2(typescript@5.3.3)':
+  '@astrojs/check@0.3.2(typescript@5.6.3)':
     dependencies:
-      '@astrojs/language-server': 2.5.3(typescript@5.3.3)
+      '@astrojs/language-server': 2.5.3(typescript@5.6.3)
       chokidar: 3.5.3
       fast-glob: 3.3.2
       kleur: 4.1.5
-      typescript: 5.3.3
+      typescript: 5.6.3
       yargs: 17.7.2
     transitivePeerDependencies:
       - prettier
@@ -2884,11 +2887,11 @@ snapshots:
 
   '@astrojs/internal-helpers@0.2.1': {}
 
-  '@astrojs/language-server@2.5.3(typescript@5.3.3)':
+  '@astrojs/language-server@2.5.3(typescript@5.6.3)':
     dependencies:
       '@astrojs/compiler': 2.3.2
       '@jridgewell/sourcemap-codec': 1.4.15
-      '@volar/kit': 1.10.10(typescript@5.3.3)
+      '@volar/kit': 1.10.10(typescript@5.6.3)
       '@volar/language-core': 1.10.10
       '@volar/language-server': 1.10.10
       '@volar/language-service': 1.10.10
@@ -2926,12 +2929,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@2.0.1(astro@4.0.5(typescript@5.3.3))':
+  '@astrojs/mdx@2.0.1(astro@4.0.5(typescript@5.6.3))':
     dependencies:
       '@astrojs/markdown-remark': 4.0.1
       '@mdx-js/mdx': 3.0.0
       acorn: 8.11.2
-      astro: 4.0.5(typescript@5.3.3)
+      astro: 4.0.5(typescript@5.6.3)
       es-module-lexer: 1.4.1
       estree-util-visit: 2.0.0
       github-slugger: 2.0.0
@@ -2967,9 +2970,9 @@ snapshots:
       kleur: 4.1.5
       ora: 8.1.1
 
-  '@astrojs/tailwind@5.0.3(astro@4.0.5(typescript@5.3.3))(tailwindcss@3.3.6)':
+  '@astrojs/tailwind@5.0.3(astro@4.0.5(typescript@5.6.3))(tailwindcss@3.3.6)':
     dependencies:
-      astro: 4.0.5(typescript@5.3.3)
+      astro: 4.0.5(typescript@5.6.3)
       autoprefixer: 10.4.16(postcss@8.4.32)
       postcss: 8.4.32
       postcss-load-config: 4.0.2(postcss@8.4.32)
@@ -3522,11 +3525,11 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@volar/kit@1.10.10(typescript@5.3.3)':
+  '@volar/kit@1.10.10(typescript@5.6.3)':
     dependencies:
       '@volar/language-service': 1.10.10
       typesafe-path: 0.2.2
-      typescript: 5.3.3
+      typescript: 5.6.3
       vscode-languageserver-textdocument: 1.0.11
       vscode-uri: 3.0.8
 
@@ -3622,7 +3625,7 @@ snapshots:
       resolve-pkg: 2.0.0
       svgo: 2.8.0
 
-  astro@4.0.5(typescript@5.3.3):
+  astro@4.0.5(typescript@5.6.3):
     dependencies:
       '@astrojs/compiler': 2.3.2
       '@astrojs/internal-helpers': 0.2.1
@@ -3677,7 +3680,7 @@ snapshots:
       shikiji: 0.6.13
       string-width: 7.0.0
       strip-ansi: 7.1.0
-      tsconfck: 3.0.0(typescript@5.3.3)
+      tsconfck: 3.0.0(typescript@5.6.3)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
       vite: 5.2.8
@@ -5752,9 +5755,9 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  tsconfck@3.0.0(typescript@5.3.3):
+  tsconfck@3.0.0(typescript@5.6.3):
     optionalDependencies:
-      typescript: 5.3.3
+      typescript: 5.6.3
 
   tunnel-agent@0.6.0:
     dependencies:
@@ -5769,7 +5772,7 @@ snapshots:
     dependencies:
       semver: 7.5.4
 
-  typescript@5.3.3: {}
+  typescript@5.6.3: {}
 
   unherit@3.0.1: {}
 
